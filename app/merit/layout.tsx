@@ -6,10 +6,7 @@ import { Chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { publicProvider } from 'wagmi/providers/public'
 import {mainnet, polygon, bscTestnet} from 'wagmi/chains'
-export const metadata = {
-  title: 'Merit',
-  description: 'Decentralized badge platform',
-}
+
 
 const { chains, provider } = configureChains(
   [bscTestnet], // you can add more chains here like chain.mainnet, chain.optimism etc.
@@ -55,10 +52,6 @@ export default function RootLayout({
       </WagmiConfig>
       </section>
       
-      
-     
-     
-        
-    
+   
   )
 }
